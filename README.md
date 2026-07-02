@@ -13,7 +13,7 @@ Os exercícios foram baseados principalmente no curso de Python do Gustavo Guana
 ##  Estrutura
 
 Os exercícios estão organizados por tema:
-
+```bash
 exercicios/
 ├── 01_sequenciais/
 ├── 02_condicionais/
@@ -22,7 +22,7 @@ exercicios/
 ├── 05_listas/
 ├── 06_dicionarios/
 ├── 07_funcoes/
-
+```
 
 ---
 

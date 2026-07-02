@@ -1,6 +1,6 @@
 # Exercícios de Python
 
-Repositório com exercícios desenvolvidos durante meu aprendizado de Python, com foco em lógica de programação e prática dos principais conceitos da linguagem.
+Repositório com exercícios desenvolvidos **durante meu aprendizado** de Python, com foco em lógica de programação e prática dos principais conceitos da linguagem.
 
 ---
 
@@ -28,7 +28,7 @@ exercicios/
 
 ##  Observação
 
-Nem todos os módulos estão completos no momento, pois o repositório está sendo construído e reorganizado gradualmente durante o processo de estudo e refatoração dos exercícios.
+Nem todos os módulos estão completos no momento, pois o repositório está sendo construído e reorganizado gradualmente durante o processo de estudo e **refatoração dos exercícios**.
 
 ---
 

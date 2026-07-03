@@ -1,13 +1,17 @@
-num1=int(input('digite um numero'))
+# Exercício 007 - Tabuada
+
+numero =int(input('digite um numero'))
+
 print ('-'*12)
-print('multiplicado por 1  =', (num1*1))
-print('multiplicado por 2  =', (num1*2))
-print('multiplicado por 3  =', (num1*3))
-print('multiplicado por 4  =', (num1*4))
-print('multiplicado por 5  =', (num1*5))
-print('multiplicado por 6  =', (num1*6))
-print('multiplicado por 7  =', (num1*7))
-print('multiplicado por 8  =', (num1*8))
-print('multiplicado por 9  =', (num1*9))
-print('multiplicado por 10 =', (num1*10))
+print (f"{numero} X 1 = {numero*1}\n"
+       f"{numero} X 2 = {numero*2}\n"
+       f"{numero} X 3 = {numero*3}\n"
+       f"{numero} X 4 = {numero*4}\n"
+       f"{numero} X 5 = {numero*5}\n"
+       f"{numero} X 6 = {numero*6}\n"
+       f"{numero} X 7 = {numero*7}\n"
+       f"{numero} X 8 = {numero*8}\n"
+       f"{numero} X 9 = {numero*9}\n"
+       f"{numero} X 10 = {numero*10}\n"
+) # Optei por fazer a tabuada de forma manual, pois ainda não tinha aprendido laços de repetição
 print ('-'*12)

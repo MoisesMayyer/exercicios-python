@@ -1,2 +1,7 @@
-num1=int(input('digite um valor'))
-print('vc pode comprar {:.2f} dolares'.format(num1/5.24))
+# Exercício 008 - Conversão de Real para Dólar
+
+taxa_cambio = 5.24
+valor_real = float(input('Digite um valor: '))
+conversao = valor_real/taxa_cambio
+
+print(f"Com R$ {valor_real:.2f}, você pode comprar US$ {conversao:.2f}")

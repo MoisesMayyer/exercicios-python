@@ -1,4 +1,7 @@
+# Exercício 012 - Conversão de temperatura de Celsius para Fahrenheit
 
-temp=float(input('digite a temperatura atual'))
-convert= (temp * 1.8) + 32
-print(' sua temperatura em graus é {:.2f} e em  Fahrenheit {:.2f}'.format(temp,convert))
+temperatura_celsius=float(input('Digite a temperatura atual em Celcius:'))
+
+temperatura_fahrenheit = (temperatura_celsius * 1.8) + 32
+
+print(f'A temperatura de {temperatura_celsius:.2f}°C corresponde a {temperatura_fahrenheit:.2f}°F')

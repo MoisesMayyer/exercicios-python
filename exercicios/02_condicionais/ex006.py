@@ -1,13 +1,15 @@
-n1 = int(input("Digite o primeiro: "))
-n2 = int(input("Digite o segundo: "))
-n3 = int(input("Digite o terceiro: "))
+# Exercício 6 - verificação de numero maior entre 3 numeros
 
-maior = n1
+numero1 = int(input("Digite o primeiro número: "))
+numero2 = int(input("Digite o segundo número: "))
+numero3 = int(input("Digite o terceiro número: "))
 
-if n2 > maior:
-    maior = n2
+maior_numero = numero1
 
-if n3 > maior:
-    maior = n3
+if numero2 > maior_numero:
+    maior_numero = numero2
 
-print(f'O maior é:{maior}')
+if numero3 > maior_numero:
+    maior_numero = numero3
+
+print(f"O maior número é: {maior_numero}")

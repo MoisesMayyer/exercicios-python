@@ -1,29 +1,32 @@
+# exercício 015 - cálculo de preço com desconto e parcelamento
+
 preco = float(input('Digite o valor do produto: '))
-form = input('Digite a forma de pagamento: ').lower()
+forma_pagamento = input('Digite a forma de pagamento: ').lower()
 
-dc = preco - (preco * 10)/100
-vista = preco - (preco * 5)/100
+desconto_dinheiro = preco * 0.90
+desconto_vista = preco * 0.95
 
-if form in ['dinheiro', 'cheque']:
-    print(f'Você pagará {dc:.2f}')
+if forma_pagamento in ['dinheiro', 'cheque']:
+    print(f'Você pagará R$ {desconto_dinheiro:.2f}')
 
-elif form == 'vista':
-    print(f'Você pagará {vista:.2f}')
+elif forma_pagamento == 'vista':
+    print(f'Você pagará R$ {desconto_vista:.2f}')
 
-elif form == 'parcelado':
-    x = int(input('Quantas vezes deseja parcelar? '))
+elif forma_pagamento == 'parcelado':
+    quantidade_parcelas = int(input('Quantas vezes deseja parcelar? '))
 
-    if x == 2:
-        x2 = preco / 2
-        print(f'Você pagará {x2:.2f} por 2 meses')
+    if quantidade_parcelas == 2:
+        valor_parcela = preco / quantidade_parcelas
+        print(f'Você pagará R$ {valor_parcela:.2f} em {quantidade_parcelas} vezes')
 
-    elif x >= 3:
-        x3 = preco + (preco * 20)/100
-        parcela = x3 / x
-        print(f'Você pagará {parcela:.2f} em {x} vezes')
+    elif quantidade_parcelas >= 3:
+        preco_com_juros = preco * 1.20
+        valor_parcela = preco_com_juros / quantidade_parcelas
+
+        print(f'Você pagará R$ {valor_parcela:.2f} em {quantidade_parcelas} vezes')
 
     else:
-        print('Parcelamento inválido')
+        print('Parcelamento inválido.')
 
 else:
-    print('Forma de pagamento inválida')
+    print('Forma de pagamento inválida.')

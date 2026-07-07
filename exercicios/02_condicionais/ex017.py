@@ -1,31 +1,41 @@
+# exercício 017 - jogo de pedra, papel e tesoura com computador
 import random
-num = random.choice(('Pedra', 'Papel', 'Tesoura')).strip().lower()
-print('vamos jogar jokempo')
-player= str(input('1...2...3....vai!')).lower().strip()
 
-if player not in ['pedra', 'papel', 'tesoura']:
-    print('jogada invalida')
+opcoes = ('pedra', 'papel', 'tesoura')
 
-elif player == 'pedra' and num == 'papel':
-    print('voce perdeu')
-    print(num)
-elif player == 'pedra' and num == 'tesoura':
-    print('voce ganhou')
-    print(num)
+jogada_computador = random.choice(opcoes)
 
-elif player == 'papel' and num == 'tesoura':
-    print('voce perdeu')
-    print(num)
-elif player == 'papel' and num == 'pedra':
-    print('voce ganhou')
-    print(num)
+print('Vamos jogar joquempô')
 
-elif player == 'tesoura' and num == 'pedra':
-    print('voce perdeu')
-    print(num)
-elif player == 'tesoura' and num == 'papel':
-    print('voce ganhou')
-    print(num)
+jogada_jogador = input('1...2...3...vai! ').lower().strip()
+
+if jogada_jogador not in opcoes:
+    print('Jogada inválida')
+
+elif jogada_jogador == 'pedra' and jogada_computador == 'papel':
+    print('Você perdeu')
+    print(jogada_computador)
+
+elif jogada_jogador == 'pedra' and jogada_computador == 'tesoura':
+    print('Você ganhou')
+    print(jogada_computador)
+
+elif jogada_jogador == 'papel' and jogada_computador == 'tesoura':
+    print('Você perdeu')
+    print(jogada_computador)
+
+elif jogada_jogador == 'papel' and jogada_computador == 'pedra':
+    print('Você ganhou')
+    print(jogada_computador)
+
+elif jogada_jogador == 'tesoura' and jogada_computador == 'pedra':
+    print('Você perdeu')
+    print(jogada_computador)
+
+elif jogada_jogador == 'tesoura' and jogada_computador == 'papel':
+    print('Você ganhou')
+    print(jogada_computador)
+
 else:
-    print('empate')
-    print(num)
+    print('Empate')
+    print(jogada_computador)

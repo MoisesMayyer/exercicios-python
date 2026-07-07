@@ -1,25 +1,28 @@
+# exercício 016 - jogo de pedra, papel e tesoura
 import random
 
-num = random.choice(['pedra', 'papel', 'tesoura'])
-print('vamos jogar jokempo')
+opcoes = ['pedra', 'papel', 'tesoura']
 
-player = input('1...2...3....vai! ').lower().strip()
+jogada_computador = random.choice(opcoes)
 
-if player not in ['pedra', 'papel', 'tesoura']:
-    print('jogada invalida')
+print('Vamos jogar joquempô!')
 
-elif player == num:
-    print('empate')
-    print(num)
+jogada_jogador = input('1... 2... 3... vai! ').lower().strip()
+
+if jogada_jogador not in opcoes:
+    print('Jogada inválida.')
+
+elif jogada_jogador == jogada_computador:
+    print('Empate!')
 
 elif (
-    (player == 'pedra' and num == 'tesoura') or
-    (player == 'papel' and num == 'pedra') or
-    (player == 'tesoura' and num == 'papel')
+    (jogada_jogador == 'pedra' and jogada_computador == 'tesoura') or
+    (jogada_jogador == 'papel' and jogada_computador == 'pedra') or
+    (jogada_jogador == 'tesoura' and jogada_computador == 'papel')
 ):
-    print('voce ganhou')
-    print(num)
+    print('Você ganhou!')
 
 else:
-    print('voce perdeu')
-    print(num)
+    print('Você perdeu!')
+
+print(f'O computador escolheu {jogada_computador}.')

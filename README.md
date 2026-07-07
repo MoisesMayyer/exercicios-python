@@ -17,11 +17,12 @@ Os exercícios estão organizados por tema:
 exercicios/
 ├── 01_sequenciais/
 ├── 02_condicionais/
-├── 03_loops/
-├── 04_tuplas/
-├── 05_listas/
-├── 06_dicionarios/
-├── 07_funcoes/
+├── 03_modulos_bibliotecas/
+├── 04_loops/
+├── 05_tuplas/
+├── 06_listas/
+├── 07_dicionarios/
+├── 08_funcoes/
 ```
 
 ---

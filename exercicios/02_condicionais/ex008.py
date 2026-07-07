@@ -1,7 +1,16 @@
-r1 =float(input('digite a primeria reta'))
-r2 =float(input('digite a segunda reta'))
-r3 =float(input('digite a terceira reta'))
-if r1 + r2 > r3 and r1 + r3 > r2 and r2 + r3 > r1:
-    print('forma um triangulo')
+# exercício 008 - verificação de um triangulo
+
+lado1 = float(input('Digite o primeiro lado: '))
+lado2 = float(input('Digite o segundo lado: '))
+lado3 = float(input('Digite o terceiro lado: '))
+
+forma_triangulo = (
+    lado1 + lado2 > lado3
+    and lado1 + lado3 > lado2
+    and lado2 + lado3 > lado1
+)
+
+if forma_triangulo:
+    print('Forma um triângulo.')
 else:
-    print('nao forma um triangulo')
+    print('Não forma um triângulo.')

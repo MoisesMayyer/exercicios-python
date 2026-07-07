@@ -1,8 +1,11 @@
-num1 = int(input('digite um valor'))
-num2 = int(input('digite outro valor'))
-if num1 > num2:
-    print(f'o valor {num1} é maior que o valor {num2}')
-elif num1 < num2:
-    print(f'o valor {num2} é maior que o vaor {num1}')
+# exercício 010 - verificação de maior e menor valor
+
+valor1 = int(input('digite um valor: '))
+valor2 = int(input('digite outro valor: '))
+
+if valor1 > valor2:
+    print(f'O maior valor é {valor1}.')
+elif valor2 > valor1:
+    print(f'O maior valor é {valor2}.')
 else:
-    print('nenhum é maior')
+    print('Os dois valores são iguais.')

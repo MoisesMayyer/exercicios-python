@@ -1,5 +1,9 @@
+# exercício 002 - hipotenusa de um triangulo retangulo
 import math
-cat1 = float(input('digite o cateto oposto'))
-cat2 = float(input('digite o cateto adjascente'))
-hipotenusa = math.hypot(cat1, cat2)
-print('sua hipotenusa é ', hipotenusa)
+
+cateto_oposto = float(input('Digite o valor do cateto oposto: '))
+cateto_adjascente = float(input('Digite o valor cateto adjascente: '))
+
+hipotenusa = math.hypot(cateto_oposto, cateto_adjascente)
+
+print('sua hipotenusa é: ', hipotenusa)

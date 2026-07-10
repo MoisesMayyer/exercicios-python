@@ -1,5 +1,8 @@
+# exercício 004 - Tabuada de um número escolhido pelo usuário
+from time import sleep 
 
-num =int(input('escolha o numero da sua tabuada'))
-for c in range (1,11):
-    t = num * c
-    print(f'{num} X {c} = {t}')
+tabuada = int(input('Escolha o numero da sua tabuada:'))
+
+for contador in range (1,11):
+    sleep(0.5)
+    print(f'{tabuada} X {contador} = {tabuada * contador}')

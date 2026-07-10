@@ -1,6 +1,12 @@
-s = 0
-for c in range (1,7):
-    num = int(input('digite 6 numeros inteiros'))
-    if num% 2 == 0:
-        s += num
-print(f'a soma dos numeros pares foi de {s}')        
+#exercício 005 - soma de números pares
+
+soma_pares = 0
+
+for contador in range (1,7):
+
+    numero = int(input(f'Digite o {contador}º numero: '))
+
+    if numero % 2 == 0:
+        soma_pares += numero
+
+print(f'S soma dos numeros pares foi: {soma_pares}')        

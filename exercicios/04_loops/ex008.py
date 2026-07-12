@@ -1,8 +1,10 @@
+#exercício 008 - verificação de palíndromo
 
-for c in range (1, 6):
-    f = str(input('Digite uma frase: ')).strip().lower().replace(' ', '')
-    invert =(f[::-1])
-    if  f == invert:
-        print(f'{invert} um palindromo')
+for _ in range(1, 6):
+    frase = input("Digite uma frase: ").strip().lower().replace(" ", "")
+    frase_invertida = frase[::-1]
+
+    if frase == frase_invertida:
+        print(f"{frase_invertida} é um palíndromo")
     else:
-        print(f'{f} nao é palindromo')
+        print(f"{frase} não é um palíndromo")

@@ -1,12 +1,18 @@
+#exercício 009 - verificação de idade
 
-t1 = 0
-t2 = 0
+maiores_idade = 0
+menores_idade = 0
 
-for c in range (1, 8):
-    p = int(input('digite o seu ano de nascimento'))
-    idade = 2026 - p
+for _ in range(7):
+    ano_nascimento = int(input("Digite o seu ano de nascimento: "))
+    idade = 2026 - ano_nascimento
+
     if idade >= 21:
-        t1 += 1
+        maiores_idade += 1
     else:
-        t2 += 1
-print(f'{t1} pessoas maiores de 20 anos e {t2} pessoas menores de 20 anos')
+        menores_idade += 1
+
+print(
+    f"{maiores_idade} pessoas maiores de 20 anos e "
+    f"{menores_idade} pessoas menores de 20 anos."
+)

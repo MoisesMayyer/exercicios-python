@@ -1,13 +1,21 @@
-maior = 0
-menor = 0
-for c in range (1,6):
-    p = float(input('digite seu peso: '))
-    if c == 1:
-        maior = p
-        menor = p
-    else:
-        if p > maior:
-            maior = p
-        if p < menor:
-            menor = p
-print(f'o maior peso é {maior} e o menor é {menor}')
+#exercício 010 - calculo de peso
+
+maior_peso = 0
+menor_peso = 0
+
+for pessoa in range(1, 6):
+    peso = float(input(f"Digite o peso da {pessoa}ª pessoa: "))
+
+    if pessoa == 1:
+        maior_peso = peso
+        menor_peso = peso
+        continue
+
+    if peso > maior_peso:
+        maior_peso = peso
+
+    if peso < menor_peso:
+        menor_peso = peso
+
+print(f"\nMaior peso: {maior_peso:.1f} kg")
+print(f"Menor peso: {menor_peso:.1f} kg")

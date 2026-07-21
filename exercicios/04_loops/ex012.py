@@ -10,5 +10,5 @@ while True:
     ).strip().upper()
 
     if continuar == 'N':
-        breakS
+        break
 

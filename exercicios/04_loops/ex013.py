@@ -1,21 +1,24 @@
 import random
-c = 1
-erros = 0
-numA = random.randint(1, 10)
 
-print('Vamos jogar um jogo de advinhar o numero de 0 a 10!!!')
-print('===='*10)
-print ('tente advinhar o numero que escolhi')
-print('==='*10)
-print(numA)
-while c != 0:
-    resp =int(input('digite um valor: '))
-    if resp == numA:
+numero_secreto = random.randint(1, 10)
+tentativas = 0
 
-        print(f'Voce acertou o numero era {numA}')
-        print(f'voce levou {erros} tentativas')
+print("Vamos jogar um jogo de adivinhar o número de 1 a 10!")
+print("=" * 40)
+print("Tente descobrir o número que eu escolhi.")
+print("=" * 40)
+
+# Apenas para testes
+# print(numero_secreto)
+
+while True:
+    palpite = int(input("Digite um número: "))
+    tentativas += 1
+
+    if palpite == numero_secreto:
+        print(f"\nParabéns! Você acertou.")
+        print(f"O número era {numero_secreto}.")
+        print(f"Você precisou de {tentativas} tentativa(s).")
         break
-    else:
-        print('continue tentando acertar !!')
-        erros += 1
 
+    print("Você errou. Tente novamente!\n")

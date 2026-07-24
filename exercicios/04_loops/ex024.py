@@ -1,30 +1,28 @@
 soma = 0
-par = 0
-impar = 0
-cont = 0
-num1 = 1
-maiornum = 0
-while num1 != 0:
+pares = 0
+impares = 0
+quantidade = 0
+maior_numero = 0
 
-    num1 = int(input('digite um valor [0] PARA PARAR '))
-    if num1 == 0:
+while True:
+    numero = int(input("Digite um valor [0 para parar]: "))
+
+    if numero == 0:
         break
-    soma += num1
-    if num1 %2 == 0:
-        par +=1
 
+    soma += numero
+    quantidade += 1
+
+    if numero % 2 == 0:
+        pares += 1
     else:
-        impar += 1
+        impares += 1
 
-    cont += 1
-    if cont == 1:
-        maiornum = num1
+    if quantidade == 1 or numero > maior_numero:
+        maior_numero = numero
 
-    else:
-        if num1 > maiornum:
-            maiornum = num1
-print(f'total de numeros digitados {cont}')
-print(f'total de numeros par {par}')
-print(f'total de numeros impar {impar}')
-print(f'a soma de todos foi de {soma}')
-print(f'o maior numero digitado é {maiornum}')
+print(f"Total de números digitados: {quantidade}")
+print(f"Total de números pares: {pares}")
+print(f"Total de números ímpares: {impares}")
+print(f"A soma de todos foi: {soma}")
+print(f"O maior número digitado foi: {maior_numero}")

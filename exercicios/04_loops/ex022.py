@@ -1,22 +1,27 @@
-id18 = 0
-h = 0
-m20 = 0
-
-
+maiores_18 = 0
+homens = 0
+mulheres_menores_20 = 0
 
 while True:
-    print('='*10 + 'cadastre uma pessoa' + '='*10)
-    idade = int(input('Idade: '))
-    sexo = str(input('sexo: [M/F]')).upper().strip()
-    resp = str(input('Quer continuar? [S/N]')).upper().strip()
-    if sexo == 'M':
-        h += 1
+    print("=" * 10 + " Cadastre uma pessoa " + "=" * 10)
+
+    idade = int(input("Idade: "))
+    sexo = input("Sexo [M/F]: ").strip().upper()
+
+    if sexo == "M":
+        homens += 1
+
     if idade > 18:
-        id18 += 1
-    if sexo == 'F' and idade < 20:
-        m20 += 1
-    if resp == 'N':
-            break
-print(f'Total de pessoas com mais de 18 anos: {id18}')
-print(f'total de homens foi de {h}')
-print(f'total de mulheres com menos de 20 anos: {m20}')
+        maiores_18 += 1
+
+    if sexo == "F" and idade < 20:
+        mulheres_menores_20 += 1
+
+    continuar = input("Quer continuar? [S/N]: ").strip().upper()
+
+    if continuar == "N":
+        break
+
+print(f"Total de pessoas com mais de 18 anos: {maiores_18}")
+print(f"Total de homens: {homens}")
+print(f"Total de mulheres com menos de 20 anos: {mulheres_menores_20}")

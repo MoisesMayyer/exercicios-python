@@ -1,12 +1,14 @@
-numD = soma = cont = 0
+soma = cont = 0
 
 while True:
-    num = int(input('digite um numero'))
+    num = int(input("Digite um número: "))
+
     if num == 999:
         break
-    cont += 1
+
     soma += num
-    print (f'a soma entre todos os valores é {soma} e temos {cont} termos')
+    cont += 1
 
-
-print('cABOU')
+print(f"A soma entre todos os valores é {soma}.")
+print(f"Foram digitados {cont} números.")
+print("Acabou!")

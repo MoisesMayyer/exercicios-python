@@ -1,7 +1,11 @@
-num = soma = 0
+soma = 0
 
-while num != 999:
-    num = int(input('digite um numero'))
-    if num != 999:
-        soma =+ soma + num
-        print(f'a soma entre os valores é {soma}')
+while True:
+    numero = int(input("Digite um número (999 para parar): "))
+
+    if numero == 999:
+        break
+
+    soma += numero
+
+print(f"A soma dos valores é {soma}.")

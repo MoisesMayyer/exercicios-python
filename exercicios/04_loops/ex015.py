@@ -1,6 +1,9 @@
 import math
 
-c = 's'
-while c != 'n':
-    num = int(input('digite um numero: '))
-    print(math.factorial(num))
+continuar = "s"
+
+while continuar.lower() != "n":
+    numero = int(input("Digite um número: "))
+    print(f"Fatorial: {math.factorial(numero)}")
+
+    continuar = input("Deseja continuar? [S/N]: ")

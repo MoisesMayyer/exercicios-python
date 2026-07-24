@@ -1,8 +1,10 @@
-t1 = int(input('Digite o primeiro termo: '))
-r = int(input('Digite a razao: '))
-n = int(input('Digite a quantidade de termos: '))
-c = 1
-while c != n:
-    c += 1
-    pa = t1 + (c - 1 )*r
-    print(pa)
+primeiro_termo = int(input("Digite o primeiro termo: "))
+razao = int(input("Digite a razão: "))
+quantidade = int(input("Digite a quantidade de termos: "))
+
+contador = 0
+
+while contador < quantidade:
+    termo = primeiro_termo + contador * razao
+    print(termo)
+    contador += 1
